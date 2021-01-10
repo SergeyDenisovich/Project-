@@ -1,0 +1,102 @@
+@import "common/reset.css";
+@import "common/menu.css";
+@import "common/footer.css";
+@import "common/bg_fonts.css";
+
+
+.wrapper {
+    min-height: 100vh;
+    background: rgb(204, 204, 204) url("../images/service/auto.png") no-repeat bottom;
+    background-attachment: fixed;
+    position: relative;
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+    .middle-section {
+        margin: 50px 0;
+    }
+
+        .wrapper-inner {
+            width: 80%;
+            min-width: 400px;
+            margin: 0 auto;
+            padding: 15px;
+            border-top: 5px solid rgb(255, 0, 0);
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .container-text {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-top: solid rgb(255, 255, 255);
+            border-bottom: solid rgb(255, 255, 255);
+        }
+
+        .container-text h2 {
+            font-size: 30px;
+            text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        }
+
+        .container-info {
+            margin-top: 10px;
+        }
+
+        .button-btn {
+            background-color: rgba(139, 161, 153, 0.73);
+            cursor: pointer;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid rgb(50, 52, 56);
+            outline: none;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .active-btn,
+        .button-btn:hover {
+            background-color: rgb(139, 161, 153);
+            color: rgb(50, 52, 56);
+        }
+
+        .block-content {
+            padding: 15px 20px;
+            background-color: rgb(119, 119, 119);
+            display: none;
+            overflow: hidden;
+            font-family: cursive;
+        }
+
+        .button-btn:after {
+            content: '\002B';
+            color: rgb(119, 119, 119);
+            font-weight: bold;
+            float: right;
+        }
+
+        .active-btn:after {
+            content: "\2212";
+        }
+
+        .container-info {
+            width: 100%;
+            background: rgba(0, 0, 0, .6);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 18px;
+        }
+

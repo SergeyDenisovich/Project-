@@ -1,0 +1,234 @@
+@import "common/reset.css";
+@import "common/menu.css";
+@import "common/footer.css";
+@import "common/bg_fonts.css";
+@import "common/button_to_top.css";
+
+
+img[src$=".jpg"] {
+    width: 100%;
+    height: auto;
+}
+
+img[src$=".jpg"]:hover {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.wrapper {
+    background: url("../images/our_work/bg3.jpg") no-repeat center center;
+    background-attachment: fixed;
+    position: relative;
+    min-width: 400px;
+}
+
+
+    .container {
+        color: rgb(255, 255, 255);
+        margin: 15px 0;
+    }
+
+        .container-center-text {
+            width: 50%;
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .container-center-text,
+        .section__header h2 {
+            text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        }
+
+        .container-center-text h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .container-center-text h1::after,
+        .container-center-text h1::before {
+            content: url("../images/our_work/wheel_1.png");
+            display: inline-block;
+            margin: 0 15px;
+            position: absolute;
+            top: 0;
+        }
+
+        .container-center-text h1::after {
+            left: 100%;
+         }
+
+        .container-center-text h1::before {
+            right: 100%;
+        }
+
+        .container-center-text p {
+            font-size: 18px;
+        }
+
+
+    .section {
+        color: #fff;
+        text-align: center;
+    }
+
+    .section:nth-of-type(3) {
+        margin-bottom: 60px;
+    }
+
+        .section__header h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0 15px;
+        }
+
+        .section:before,
+        .section:last-child:after {
+            content: "";
+            display: block;
+            margin: 20px auto;
+            width: 10%;
+            max-width: 150px;
+            border: solid rgb(255, 255, 255);
+        }
+
+        .section__gallery {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            padding: 0 5px;
+        }
+
+        .section__gallery p {
+            padding: 15px 0;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        .section__gallery-block {
+            -webkit-box-flex: 25%;
+            -ms-flex: 25%;
+            flex: 25%;
+            max-width: 25%;
+            margin: 15px 0;
+            padding: 0 5px;
+        }
+
+                /*---- change border bottom color of images-----*/
+                .section__gallery-description_broken {
+                    border-bottom: 2px solid rgb(242, 7, 7);
+                }
+
+                .section__gallery-description_better {
+                    border-bottom: 3px solid rgb(241, 195, 6);
+                }
+
+                .section__gallery-description_nearly {
+                    border-bottom: 4px solid rgb(161, 232, 125);
+                }
+
+                .section__gallery-description_ready {
+                    border-bottom: 5px solid rgb(41, 150, 16);
+                }
+
+        .section__gallery-block a img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        /*---- section footer-----*/
+        .section__footer {
+            position: relative;
+            margin: 0 10px;
+            margin-top: 15px;
+        }
+
+        .section__footer a {
+            text-decoration: none;
+            -webkit-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+            .more-link {
+                position: relative;
+                display: inline-block;
+                font-size: 10px;
+                text-transform: uppercase;
+                color: rgb(255, 255, 255);
+                line-height: 44px;
+                padding: 0 22px;
+                background: rgb(135, 148, 163);
+                letter-spacing: 0.1em;
+                white-space: nowrap;
+            }
+
+            .more-link:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 0;
+                right: 0;
+                border: solid transparent;
+                border-width: 22px 18px;
+                border-left-color: rgb(135, 148, 163);
+                -webkit-transform: translateX(100%);
+                -ms-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+
+            .section__footer a:hover {
+                color: rgb(211, 208, 205);
+            }
+
+
+/*------------ media -----------*/
+@media screen and (max-width: 1200px) {
+
+    .section__gallery-block {
+        -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .section__gallery-block {
+        -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .container-center-text h1::after,
+    .container-center-text h1::before {
+        content: url("../images/our_work/wheel_1.png");
+        display: inline-block;
+        margin: 0 25px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+}

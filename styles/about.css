@@ -1,0 +1,58 @@
+@import "common/reset.css";
+@import "common/menu.css";
+@import "common/footer.css";
+@import "common/bg_fonts.css";
+@import "common/button_to_top.css";
+
+
+.wrapper {
+    background: url("../images/about/orig (1).jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    .wrapper-inner {
+        margin: 101px auto 80px;
+        background: rgba(0, 0, 0, .6);
+        border: 2px solid rgb(135, 148, 163);
+        border-radius: 10px;
+        max-width: 900px;
+        text-align: center;
+    }
+
+        .container {
+            padding: 30px;
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            border-bottom: solid rgb(255, 255, 255);
+            font-size: 32px;
+            text-shadow: 2px 2px 1px rgb(119, 119, 119);
+        }
+
+            .container-person  {
+                margin: 15px auto;
+                background: rgb(204, 204, 204);
+                width: 80%;
+                min-width: 400px;
+                border: 2px solid rgb(50, 52, 56);
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+                .container-person h2 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    padding: 10px 0;
+                    background: rgb(221, 221, 221);
+                }
+
+
+
+
+
+
+
+
+
+
+

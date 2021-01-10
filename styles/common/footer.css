@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    padding: 30px 0;
+    background: rgb(60, 61, 65);
+    opacity: .8;
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+    .social-link a i {
+        padding: 0 10px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        position: relative;
+        -webkit-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .social-link a:hover [class^="fa fa-"] {
+        color: rgb(255, 255, 255);
+        -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }

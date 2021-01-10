@@ -1,0 +1,26 @@
+.button {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    bottom:100px;
+    right: 50px;
+    border-color: rgb(255, 255, 255);
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 2px 1px rgb(50, 52, 56);
+    box-shadow: 2px 2px 1px rgb(50, 52, 56);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+    .button:hover {
+        outline: 2px solid rgb(255, 0, 0);
+        outline-offset: 5px;
+        color: rgb(50, 52, 56);
+        background: rgb(255, 255, 255);
+    }

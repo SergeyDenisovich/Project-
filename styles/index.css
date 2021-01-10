@@ -1,0 +1,190 @@
+@import "common/reset.css";
+@import "common/menu.css";
+@import "common/footer.css";
+@import "common/bg_fonts.css";
+@import "common/button_to_top.css";
+@import "fonts.css";
+
+
+.block-one {
+    background: url("../images/index/bg_1.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+    .block-one,
+    .block-two {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-family: cursive;
+        text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    }
+
+    .block-one__inner {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-top: 5px solid rgb(255, 255, 255);
+        border-bottom: 5px solid rgb(255, 255, 255);
+    }
+
+        .block-one__inner:after {
+            content: url("../images/index/tools_1.png");
+            border: solid rgb(255, 255, 255);
+            border-radius: 50%;
+            padding: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+    .top-block,
+    .bottom-block {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        font-size: 34px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: rgba(0, 0, 0, .6);
+    }
+
+    .block-two {
+        background: url("../images/index/bg_2.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        .block-two__inner-first {
+            padding: 50px 20px;
+            background: rgba(60, 61, 65, .8); ;
+            text-align: center;
+            font-size: 26px;
+            position: relative;
+        }
+
+        .block-two__inner-second {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin: 50px auto;
+            width: 80%;
+            min-height: 400px;
+            padding: 15px;
+            font: 30px/2.0 'MyWebFont', cursive;
+            border-top: 5px solid rgb(255, 255, 255);
+            background: rgba(0, 0, 0, .6);
+            -ms-flex-item-align: center;
+            align-self: center;
+        }
+
+        .block-two__inner-second-left-section,
+        .block-two__inner-second-right-section {
+            -webkit-box-flex: 50%;
+            -ms-flex: 50%;
+            flex: 50%;
+        }
+
+        .block-two__inner-second-left-section {
+            background: url("../images/index/retro_m_1.png") no-repeat center;
+            background-size: contain;
+            text-align: center;
+            -webkit-animation: machina 2s ease-in-out infinite;
+            animation: machina 2s ease-in-out infinite;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+
+        .block-two__inner-second-right-section {
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            text-align: center;
+        }
+
+/*--------- animation ----------*/
+@keyframes machina {
+    50% {
+        background: url("../images/index/retro_m_2.png") no-repeat center;
+        background-size: contain;
+    }
+}
+
+
+/*-------------- media ---------------*/
+@media screen and (max-width: 700px) {
+
+    .block-two__inner-second {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .block-two__inner-second-right-section {
+        line-height: 1;
+    }
+
+    .block-two__inner-second-right-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .block-two__inner-second-left-section h2 {
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .block-one .block-one__inner .top-block {
+        align-items: flex-start;
+    }
+
+    .block-one .block-one__inner .bottom-block {
+        align-items: flex-end;
+    }
+
+    .block-two .block-two__inner-first {
+        font-size: 22px;
+    }
+
+}
+

@@ -1,0 +1,131 @@
+.header {
+    width: 100%;
+    background: rgb(50, 52, 56);
+    font-family: cursive;
+    position: relative;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+    .menu {
+        padding: 20px 0;
+    }
+
+    .menu .menu__list {
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+
+    .menu__list li {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 15px;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+
+        .menu__list li:hover {
+            background: rgb(242, 242, 242);
+        }
+
+        .menu__list li:hover a {
+            color: rgb(50, 52, 56);
+        }
+
+    .menu__list li a {
+        text-decoration: none;
+        color: rgb(242, 242, 242);
+        font-size: 20px;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+
+    .active-menu {
+        background: rgba(0, 0, 0, .8);
+    }
+
+    .nav-toggle {
+        display: none;
+        position: relative;
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        background: rgb(98, 119, 111);
+        cursor: pointer;
+        -webkit-transition: background .4s ease-in-out;
+        -o-transition: background .4s ease-in-out;
+        transition: background .4s ease-in-out;
+    }
+
+        .nav-toggle:hover {
+            background: rgb(79, 99, 91);
+        }
+
+    .nav-toggle span {
+        display: block;
+        position: absolute;
+        top: 19px;
+        left: 8px;
+        right: 8px;
+        height: 2px;
+        background: white;
+    }
+
+    .nav-toggle span:before, .nav-toggle span:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+    .nav-toggle span:before {
+        top: -10px;
+    }
+    .nav-toggle span:after {
+        bottom: -10px;
+    }
+
+    #topnav.active-menu {
+        max-height: 248px;
+    }
+
+
+    /*-----------------media---------------*/
+
+@media (max-width: 550px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .menu__list {
+        max-height: 0;
+        position: absolute;
+        overflow: hidden;
+        top: 80px;
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 9999;
+    }
+
+    .menu .menu__list {
+        border: none;
+    }
+
+    .menu__list li {
+        display: block;
+        width: 100%;
+    }
+
+}

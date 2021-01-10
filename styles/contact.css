@@ -1,0 +1,250 @@
+@import "common/reset.css";
+@import "common/menu.css";
+@import "common/footer.css";
+@import "common/bg_fonts.css";
+
+
+.wrapper,
+.middle-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: url("../images/contact/bg_c.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+    .middle-section {
+        margin: 60px auto;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 100%;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+    }
+
+/*-------------------style for form section--------------------*/
+
+        .container-form {
+            -ms-flex-item-align: stretch;
+            -ms-grid-row-align: stretch;
+            align-self: stretch;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, .6);
+            padding: 15px;
+        }
+
+        .container-form-info,
+        .container-info__address {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 20px 0;
+        }
+
+                input,
+                select,
+                textarea {
+                    width: 100%;
+                    background: rgb(255, 255, 255);
+                    padding: 15px;
+                    border: 1px solid rgb(204, 204, 204);
+                    border-radius: 5px;
+                    resize: vertical;
+                }
+
+                input[type=text]:focus,
+                textarea:focus  {
+                    background-color: rgb(221, 221, 221);
+                    outline: none;
+                }
+
+                label {
+                    padding: 12px 12px 12px 0;
+                    display: inline-block;
+                    color: rgb(255, 255, 255);
+                }
+
+                .row:last-child {
+                    width: 50%;
+                    margin: 15px auto;
+                }
+
+                input[type=submit] {
+                    background-color: rgb(139, 161, 153);
+                    color: rgb(255, 255, 255);
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    -webkit-transition: all .3s ease-in-out;
+                    -o-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                }
+
+                input[type=submit]:hover {
+                    background-color: rgb(67, 79, 82);
+                }
+
+                textarea {
+                    height: 200px;
+                }
+
+                .col-25 {
+                    float: left;
+                    width: 25%;
+                    margin-top: 6px;
+                }
+
+                .col-75 {
+                    float: left;
+                    width: 75%;
+                    margin-top: 6px;
+                }
+
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+
+        /*-------------- style for section with tel and map ---------------*/
+
+        .container-information {
+            -webkit-box-flex: 2;
+            -ms-flex: 2 1 auto;
+            flex: 2 1 auto;
+        }
+
+        .container-info {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+            .container-info__telephone-number {
+                font-size: 18px;
+                padding: 10px 10px 0;
+            }
+
+            .container-info__telephone-number ul li {
+                padding: 5px 0;
+            }
+
+            .container-info__telephone-number ul li:nth-child(1) {
+                color: rgb(255, 0, 0);
+            }
+
+            .container-info__telephone-number ul li:nth-child(2) {
+                color: rgb(0, 255, 0);
+            }
+
+            .container-info__telephone-number ul li:nth-child(3) {
+                color: rgb(241, 195, 6);
+            }
+
+            .container-info__address {
+                -webkit-box-flex: 2;
+                -ms-flex: 2 1 auto;
+                flex: 2 1 auto;
+                line-height: 1.5;
+            }
+
+            .container-info__telephone-number {
+                padding: 0 10px;
+            }
+
+            .container-info__map {
+                padding: 5px 10px 10px;
+            }
+
+/*----------- media ------------*/
+@media screen and (max-width: 990px) {
+
+    .middle-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .container-information,
+    .container-form {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .container-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .container-info__telephone-number,
+    .container-info__address {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .container-info__map {
+        padding-top: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

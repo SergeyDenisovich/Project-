@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Контакты</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="menu">
+          <ul class="menu__list" id="topnav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="service.html">Уcлуги</a></li>
+            <li><a href="ourwork.html">Работы</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+          </ul>
+          <div class="nav-toggle"><span></span></div>
+        </nav>
+      </header>
+
+      <div class="middle-section">
+        <div class="container-form">
+          <div class="container-form-info">
+            <h2>Вы можете связаться c нами заполнив форму ниже</h2>
+          </div>
+
+          <form>
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Ваше имя:</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="name"
+                  name="firstname"
+                  placeholder="Введие ваше имя"
+                  autofocus
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="surname">Фамилия:</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="surname"
+                  name="lastname"
+                  placeholder="Введите Вашу фамилию"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">E-mail:</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Введие Вашу эл/почту"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Примечание:</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Напишите интересующий Вас вопрос..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Отправить" />
+            </div>
+          </form>
+        </div>
+
+        <div class="container-information">
+          <div class="container-info">
+            <div class="container-info__address">
+              <h2>Мы распологаемся по ул. Большое Стиклево, 2</h2>
+              <p>Время работы: пнд - птн, 9-00 до 18-00</p>
+            </div>
+            <div class="container-info__telephone-number">
+              <ul>
+                <li><span>+375 29-544-30-56</span></li>
+                <li><span>+375 29-661-76-75</span></li>
+                <li><span>+375 25-559-94-25</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-info__map">
+            <iframe
+              src="https://www.google.ru/maps/d/embed?mid=1bDvGmUNieGWmwYJyM89jeCRWL8WIJcCS"
+              width="100%"
+              height="450"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="social-link">
+          <a title="Facebook" href="https://www.facebook.com" target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a title="Twitter" href="https://twitter.com" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a title="Pinterest" href="https://www.pinterest.com" target="_blank"
+            ><i class="fa fa-pinterest"></i
+          ></a>
+          <a title="Instagram" href="https://www.instagram.com" target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/medialink.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

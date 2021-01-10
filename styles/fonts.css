@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('fonts/web fonts/font/FontleroyBrown-webfont.eot');
+    src: url('fonts/web fonts/font/FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/web fonts/font/FontleroyBrown-webfont.woff2') format('woff2'),
+         url('fonts/web fonts/font/FontleroyBrown-webfont.woff') format('woff'),
+         url('fonts/web fonts/font/FontleroyBrown-webfont.ttf') format('truetype'),
+         url('fonts/web fonts/font/FontleroyBrown-webfont.svg#fontleroybrownregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
