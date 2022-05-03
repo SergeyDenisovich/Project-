@@ -1,10 +1,15 @@
-# Выпускной проект IT-Academy
+# (Выпускной проект IT-Academy)[https://sergeydenisovich.github.io/Website/]
 
-## This is simply project site
-It include 5 pages:
-  * main page
-  * services
-  * our work
-  * about us
-  * contacts
+## Веб-сайт состоящий из 5 страниц:
+- Главная страница
+- Сервис
+- Наши работы
+- О нас
+- Контакты
+
+### В проекте задействованы следующие технологии:
+- HTML
+- CSS
+- JavaScript
+- JQuery
 
