@@ -1,5 +1,4 @@
-# Project
-project (site with html, css, js)
+# Выпускной проект IT-Academy
 
 ## This is simply project site
 It include 5 pages:
