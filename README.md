@@ -1,4 +1,4 @@
-# (Выпускной проект IT-Academy)[https://sergeydenisovich.github.io/Website/]
+# [Выпускной проект IT-Academy](https://sergeydenisovich.github.io/Website/)
 
 ## Веб-сайт состоящий из 5 страниц:
 - Главная страница
